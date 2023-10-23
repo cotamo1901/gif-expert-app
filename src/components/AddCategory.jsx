@@ -26,7 +26,7 @@ export const AddCategory = ({ onNewCategory }) => {
         onChange={onInputChange}
         
       />
-            <img src="../../public/search-icon.svg" alt="" />
+            <img className="imgsearch" src="../../public/search-icon.svg" alt="" />
 
      </div>
     </form>

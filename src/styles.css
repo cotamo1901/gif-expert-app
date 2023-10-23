@@ -80,10 +80,19 @@
   }
 
   .input{
-    border-radius: 9px;
+    border-radius: 4px;
   }
 
 .input-container{
-  padding: 17px;
+  
   display: flex;
+}
+
+.imgsearch{
+  cursor: pointer;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  background-color: mediumorchid;
+
 }
