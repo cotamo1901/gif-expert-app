@@ -1,10 +1,15 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(7, 7, 7);
+    /* background-color: rgb(234, 234, 234); */
   }
   
   body {
+
     padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+    
   }
   
   input {
@@ -25,6 +30,7 @@
   h3 {
     font-size: 3rem;
     margin-bottom: 5px;
+    color: wheat;
   }
   
   .card-grid {
@@ -61,3 +67,23 @@
   .card img {
     width: 100%;
   }
+
+
+  .h1title{
+  color:red ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+
+  .h1onetitle{
+    color: wheat;
+  }
+
+  .input{
+    border-radius: 9px;
+  }
+
+.input-container{
+  padding: 17px;
+  display: flex;
+}

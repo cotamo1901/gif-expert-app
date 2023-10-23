@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const AddCategory = ({ onNewCategory}) => {
+export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onInputChange = (event) => {
@@ -12,18 +12,23 @@ export const AddCategory = ({ onNewCategory}) => {
 
     if (inputValue.trim().length <= 1) return {};
     // setCategories((categories) => [inputValue, ...categories]);
-    onNewCategory(inputValue.trim())
+    onNewCategory(inputValue.trim());
     setInputValue("");
   };
 
   return (
-    <form onSubmit={ onSubmit}>
-      <input
+    <form onSubmit={onSubmit}>
+      <div className="input-container">
+      <input className="input"
         type="text"
         placeholder="Search gif"
         value={inputValue}
         onChange={onInputChange}
+        
       />
+            <img src="../../public/search-icon.svg" alt="" />
+
+     </div>
     </form>
   );
 };
