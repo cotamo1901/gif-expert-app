@@ -96,3 +96,13 @@
   background-color: mediumorchid;
 
 }
+
+
+.page-logo{
+  cursor: pointer;
+}
+
+.other{
+  color: blanchedalmond;
+  background-color: red;
+}

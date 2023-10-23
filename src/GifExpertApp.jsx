@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AddCategory,GifGrid } from "./components";
+import { AddCategory, GifGrid } from "./components";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch Man"]);
@@ -16,27 +16,14 @@ export const GifExpertApp = () => {
 
   return (
     <>
-    <img src="../public/img-title.png" alt="" />
+      <img className="page-logo" src="../public/img-title.png" alt="logo" />
       {/* <h1><span className="h1onetitle">GifExpert</span><span className="h1title">App</span></h1> */}
 
-      <AddCategory
-      
+      <AddCategory onNewCategory={onAddCategory} />
 
-        onNewCategory={onAddCategory}
-      />
-
-      
-        {categories.map((category) => (
-           <GifGrid 
-           key={category} 
-           category={category} 
-           
-           />
-          )
-        )
-        }
-      
-
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </>
   );
 };

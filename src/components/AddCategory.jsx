@@ -16,19 +16,25 @@ export const AddCategory = ({ onNewCategory }) => {
     setInputValue("");
   };
 
+  
   return (
     <form onSubmit={onSubmit}>
       <div className="input-container">
-      <input className="input"
-        type="text"
-        placeholder="Search gif"
-        value={inputValue}
-        onChange={onInputChange}
-        
-      />
-            <img className="imgsearch" src="../../public/search-icon.svg" alt="" />
-
-     </div>
+        <input
+          className="input"
+          type="text"
+          placeholder="Search gif"
+          value={inputValue}
+          onChange={onInputChange}
+       
+        />
+        <img
+          className="imgsearch"
+          src="../../public/search-icon.svg"
+          alt="Logo"
+          onClick={onSubmit}
+        />
+      </div>
     </form>
   );
 };
