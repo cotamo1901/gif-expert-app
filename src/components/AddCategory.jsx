@@ -30,7 +30,7 @@ export const AddCategory = ({ onNewCategory }) => {
         />
         <img
           className="imgsearch"
-          src="../../public/search-icon.svg"
+          src="/search-icon.svg"
           alt="Logo"
           onClick={onSubmit}
         />

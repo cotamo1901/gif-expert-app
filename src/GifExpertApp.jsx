@@ -16,7 +16,7 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <img className="page-logo" src="../public/img-title.png" alt="logo" />
+      <img className="page-logo" src="/img-title.png" alt="logo" />
       {/* <h1><span className="h1onetitle">GifExpert</span><span className="h1title">App</span></h1> */}
 
       <AddCategory onNewCategory={onAddCategory} />
